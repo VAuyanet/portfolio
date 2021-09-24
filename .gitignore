@@ -1,0 +1,11 @@
+#Project
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+
+
+#IDEs
+.idea
+.vscode
