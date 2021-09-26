@@ -1,0 +1,6 @@
+$marginsTop: 40;
+@each $marginTop in $marginsTop {
+  .mt-#{$marginTop} {
+    margin-top: $marginTop + px;
+  }
+}
