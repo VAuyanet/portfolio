@@ -1,0 +1,24 @@
+- title: Pages
+  links:
+    - name: Home
+      link: /
+    - name: Portfolio
+      link: /portfolio/
+    - name: About me
+      link: /about/
+    - name: Contact
+      link: /contact/
+- title: Social
+  links:
+    - name: Twitter
+      link: https://twitter.com/auyanetvictor/
+      social_icon: Twitter
+      new_window: true
+    - name: LinkedIn
+      link: https://www.linkedin.com/in/victor-auyanet-vilabella
+      social_icon: LinkedIn
+      new_window: true
+    - name: Github
+      link: https://github.com/VAuyanet
+      social_icon: Github
+      new_window: true
