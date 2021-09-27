@@ -16,10 +16,10 @@ $desktop: "(min-width: 768px)";
 
 $section-rotation: 5deg;
 
-@import "elements";
-@import "layout";
-@import "contact";
-@import "blog";
-@import "forms";
-@import "navigation";
-@import "footer";
+@import "../_sass/elements";
+@import "../_sass/layout";
+@import "../_sass/contact";
+@import "../_sass/blog";
+@import "../_sass/forms";
+@import "../_sass/navigation";
+@import "../_sass/footer";

@@ -7,15 +7,14 @@ input[type=submit] {
   border: 1px solid $brand-color;
   background: $brand-color;
   cursor: pointer;
-}
-
-input[type=submit]:hover {
-  border: 1px solid $brand-color;
-  background: $secondary-brand-color;
-}
-
-input[type=submit]:active {
-  transform: translateY(1px);
+  margin: 20px 0 0 0;
+  &:hover {
+    border: 1px solid $brand-color;
+    background: $secondary-brand-color;
+  }
+  &:active {
+    transform: translateY(1px);
+  }
 }
 
 textarea,
@@ -24,10 +23,6 @@ button,
 select {
   font-family: inherit;
   font-size: inherit;
-}
-
-input[type=submit] {
-  margin: 20px 0 0 0;
 }
 
 label,
@@ -59,7 +54,6 @@ input,
 textarea {
   -webkit-transition: all 0.30s ease-in-out;
   -moz-transition: all 0.30s ease-in-out;
-  -ms-transition: all 0.30s ease-in-out;
   outline: none;
   border: 1px solid #DDDDDD;
 }
