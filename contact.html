@@ -12,7 +12,7 @@ zoom: 13
 <section class="diagonal">
   <div class="container">
     <form
-        action="{{ site.baseurl }}/contact-success/"
+        action="{{ site.base_url }}/contact-success/"
         method="post"
         class="contact-form"
     >
@@ -78,14 +78,14 @@ zoom: 13
   <div class="container halves aligned-top mt-40">
     <div>
       <h3>Address</h3>
-      <address>
+{#      <address>
         <a
             target="_blank"
             href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}"
         >
           {{ page.map.address | replace: ", ", ", <br>" }}
         </a>
-      </address>
+      </address>#}
     </div>
     <div>
       <h3>Email</h3>

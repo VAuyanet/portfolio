@@ -12,7 +12,7 @@ title: Home
       foundation for the web presence of your agency.
     </p>
     <p>
-      <a class="button alt" href="{{ site.baseurl }}/contact/">
+      <a class="button alt" href="{{ site.baseUrl }}/contact/">
         Contact Us
       </a>
     </p>
@@ -27,7 +27,7 @@ title: Home
         customers. We cater to any sector to boost business and increase
         exposure.</p>
       <p class="editable">
-        <a href="{{ site.baseurl }}/portfolio/">
+        <a href="{{ site.base_url }}/portfolio/">
           View Full Portfolio &rarr;
         </a>
       </p>
@@ -36,7 +36,7 @@ title: Home
       <ul class="image-grid">
         {% for client in site.clients limit: 4 %}
           <li>
-            <a href="{{ site.baseurl }}{{ client.url }}">
+            <a href="{{ site.base_url }}{{ client.url }}">
               <img
                   src="{% include relative-src.html src=client.image_path %}"
               />
@@ -54,7 +54,7 @@ title: Home
       <ul class="image-list">
         <li>
           <img
-              src="{{ site.baseurl }}/images/nextjs.svg"
+              src="{{ site.base_url }}/images/nextjs.svg"
               width="250"
               height="150"
               alt="Next.js logo"
@@ -62,7 +62,7 @@ title: Home
         </li>
         <li>
           <img
-              src="{{ site.baseurl }}/images/drupal.png"
+              src="{{ site.base_url }}/images/drupal.png"
               width="335"
               height="84"
               alt="Drupal logo"
@@ -70,7 +70,7 @@ title: Home
         </li>
         <li>
           <img
-              src="{{ site.baseurl }}/images/jekyll-logo-black-red-transparent.png"
+              src="{{ site.base_url }}/images/jekyll-logo-black-red-transparent.png"
               width="300"
               height="121"
               alt="Jekyll logo"
