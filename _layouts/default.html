@@ -25,8 +25,10 @@
       ga('create', '{{ site.google_analytics_key }}', 'auto');
       ga('send', 'pageview');
     </script>
-    <script async
-            src='https://www.google-analytics.com/analytics.js'></script>
+    <script
+        async
+        src='https://www.google-analytics.com/analytics.js'
+    ></script>
   {% endif %}
 </head>
 <body>
@@ -40,7 +42,9 @@
         <img
             src="{{ site.baseurl }}/images/logo.svg"
             alt="Urban"
-            width="150">
+            width="150"
+            height="32"
+        >
       </a>
     </h1>
     {% include navigation.html %}
@@ -60,6 +64,7 @@
             <li>
               <a
                   {% if link.new_window %}target="_blank"{% endif %}
+                  {% if link.new_window %}rel="noreferrer noopener"{% endif %}
                   href="{% include relative-src.html src=link.link %}"
                   {% if link.social_icon %}class="{{ link.social_icon | slugify }}-icon"{% endif %}
               >
