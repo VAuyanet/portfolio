@@ -4,6 +4,7 @@ base_url:
 google_analytics_key:
 google_maps_javascript_api_key:
 google_recaptcha_v2_site_key: 6LdMv48cAAAAAMqA9tJppqZlp8VbwVTaeWCkyKg3
+google_recaptcha_v2_secret_key: 6LdMv48cAAAAAL5ILctrmkmN5lJJHN032VJgBNbM
 disqus_shortname:
 
 # Default description in social shares for the jekyll-seo-tag gem

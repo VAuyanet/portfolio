@@ -12,9 +12,10 @@ zoom: 13
 <section class="diagonal">
   <div class="container">
     <form
-        action="{{ site.base_url }}/contact-success/"
+        action="{{ site.data.endpoints.contact_endpoint }}"
+        data-success="{{ site.base_url }}/contact-success/"
         method="post"
-        class="contact-form"
+        id="contact-form"
     >
       <input
           type="hidden"
@@ -78,6 +79,7 @@ zoom: 13
   <div class="container halves aligned-top mt-40">
     <div>
       <h3>Address</h3>
+      <!--
 {#      <address>
         <a
             target="_blank"
@@ -86,6 +88,7 @@ zoom: 13
           {{ page.map.address | replace: ", ", ", <br>" }}
         </a>
       </address>#}
+      -->
     </div>
     <div>
       <h3>Email</h3>
@@ -101,3 +104,5 @@ zoom: 13
 </section>
 
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="/js/useful/httpHandler.js"></script>
+<script src="/js/pages/contactForm.js"></script>
