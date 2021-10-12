@@ -1,8 +1,7 @@
-title: CV Victor Auyanet
+title: Victor Auyanet
 url: "http://auyanet.com"
 base_url:
-google_analytics_key:
-google_maps_javascript_api_key:
+google_analytics_key: G-DT3SKFBBZW
 google_recaptcha_v2_site_key: 6LdMv48cAAAAAMqA9tJppqZlp8VbwVTaeWCkyKg3
 google_recaptcha_v2_secret_key: 6LdMv48cAAAAAL5ILctrmkmN5lJJHN032VJgBNbM
 disqus_shortname:
@@ -18,27 +17,16 @@ author:
 
 # Social details for the jekyll-seo-tag gem
 social:
-  name: CV Victor Auyanet
+  name: Victor Auyanet
   links:
     - https://github.com/VAuyanet/curriculum-vitae
 
 
 timezone: Etc/UTC
 
-paginate: 10
-paginate_path: "/blog/:num/"
-permalink: pretty
-
-
-jekyll-archives:
-  enabled:
-    - "categories"
 
 plugins:
-  - "jekyll-feed"
   - "jekyll-seo-tag"
-  - "jekyll-paginate"
-  - "jekyll-archives"
 
 exclude:
   - Gemfile
