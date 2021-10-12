@@ -34,11 +34,14 @@ title: Home
     </div>
     <div>
       <ul class="image-grid">
-        {% for client in site.clients limit: 4 %}
+        {% for client in site.projects limit: 4 %}
           <li>
-            <a href="{{ site.base_url }}{{ client.url }}">
+            <a href="{{ site.base_url }}{{ project.url }}">
               <img
-                  src="{% include relative-src.html src=client.image_path %}"
+                  class="b-lazy"
+                  src="{{ site.data.images.placeholder_image }}"
+                  data-src="{% include relative-src.html src=project.image_path %}"
+                  alt="{{ project.name }}"
               />
             </a>
           </li>
@@ -54,7 +57,9 @@ title: Home
       <ul class="image-list">
         <li>
           <img
-              src="{{ site.base_url }}/images/nextjs.svg"
+              class="b-lazy"
+              src="{{ site.data.images.placeholder_image }}"
+              data-src="{{ site.base_url }}/images/nextjs.svg"
               width="250"
               height="150"
               alt="Next.js logo"
@@ -62,7 +67,9 @@ title: Home
         </li>
         <li>
           <img
-              src="{{ site.base_url }}/images/drupal.png"
+              class="b-lazy"
+              src="{{ site.data.images.placeholder_image }}"
+              data-src="{{ site.base_url }}/images/drupal.png"
               width="335"
               height="84"
               alt="Drupal logo"
@@ -70,7 +77,9 @@ title: Home
         </li>
         <li>
           <img
-              src="{{ site.base_url }}/images/jekyll-logo-black-red-transparent.png"
+              class="b-lazy"
+              src="{{ site.data.images.placeholder_image }}"
+              data-src="{{ site.base_url }}/images/jekyll-logo-black-red-transparent.png"
               width="300"
               height="121"
               alt="Jekyll logo"
