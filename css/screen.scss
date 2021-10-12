@@ -16,6 +16,8 @@ $desktop: "(min-width: 768px)";
 
 $section-rotation: 5deg;
 
+@import "../_sass/utilities";
+@import "../_sass/customGrid";
 @import "../_sass/elements";
 @import "../_sass/layout";
 @import "../_sass/contact";
@@ -23,3 +25,4 @@ $section-rotation: 5deg;
 @import "../_sass/forms";
 @import "../_sass/navigation";
 @import "../_sass/footer";
+@import "../_sass/about";

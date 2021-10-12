@@ -80,19 +80,19 @@
 
       <ul class="footer-links">
         <li>
-          <h2>{{ site.data.company.title }}</h2>
+          <h2>{{ site.data.personal_information.title }}</h2>
         </li>
-        <li>{{ site.data.company.description }}</li>
+        <li>{{ site.data.personal_information.description }}</li>
         <li>
-          <a href="mailto:{{ site.data.company.contact_email_address }}"
+          <a href="mailto:{{ site.data.personal_information.contact_email_address }}"
           >
-            {{ site.data.company.contact_email_address }}
+            {{ site.data.personal_information.contact_email_address }}
           </a>
         </li>
         <li>
-          <a href="tel:{{ site.data.company.contact_phone_number }}"
+          <a href="tel:{{ site.data.personal_information.contact_phone_number }}"
           >
-            {{ site.data.company.contact_phone_number }}
+            {{ site.data.personal_information.contact_phone_number }}
           </a>
         </li>
       </ul>
@@ -102,6 +102,8 @@
 </footer>
 
 
+<script src="/js/libs/blazy.min.js"></script>
 <script src="/js/layout/menu.js"></script>
+<script src="/js/pages/default.js"></script>
 </body>
 </html>

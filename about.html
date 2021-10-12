@@ -1,12 +1,51 @@
 ---
 title: About me
-heading: About me
+heading: This is me
 ---
 
 <section class="diagonal">
-  <div class="text-container">
-
-    <h3>This is me title</h3>
-    <p>This is me body</p>
+  <div class="text-container about-layout">
+    <div class="row">
+      <div class="col-50">
+        <div class="about-img mb-25">
+          <img
+              class="b-lazy"
+              src="{{ site.data.images.placeholder_image }}"
+              data-src="{{ site.base_url }}/images/victor-auyanet-ready.jpg"
+              alt="Victor Auyanet ready for any project"
+              width="250"
+              height="250"
+          />
+        </div>
+        <div class="about-text">
+          <p>
+            Always ready for any project.
+          </p>
+          <p>
+            {{ site.data.personal_information.dev_experience_years }} years of experience programming and counting.
+          </p>
+        </div>
+      </div>
+      <div class="col-50">
+        <div class="about-img mb-25">
+          <img
+              class="b-lazy"
+              src="{{ site.data.images.placeholder_image }}"
+              data-src="{{ site.base_url }}/images/victor-auyanet-formal.jpg"
+              alt="Victor Auyanet dressed formal"
+              width="250"
+              height="250"
+          />
+        </div>
+        <div class="about-text">
+          <p>
+            I love programming!
+          </p>
+          <p>
+            I master: React, Git, Clean code...
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

@@ -1,6 +1,12 @@
 $marginsTop: 40;
 @each $marginTop in $marginsTop {
   .mt-#{$marginTop} {
-    margin-top: $marginTop + px;
+    margin-top: $marginTop + px !important;
+  }
+}
+$marginsBottom: 25;
+@each $marginBottom in $marginsBottom {
+  .mb-#{$marginBottom} {
+    margin-bottom: $marginBottom + px !important;
   }
 }
