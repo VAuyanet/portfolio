@@ -1,108 +1,110 @@
 ---
 title: Contact
-heading: Get in touch today
+heading: Get in touch
 subtitle: I'd love to help your business.
-map:
-latitude: -45.8787605
-longitude: 170.5027976
-address: "1 George Street, Dunedin, New Zealand"
-zoom: 13
 ---
 
 <section class="diagonal">
   <div class="container">
-    <form
-        action="{{ site.data.endpoints.contact_endpoint }}"
-        data-success="{{ site.base_url }}/contact-success/"
-        method="post"
-        id="contact-form"
-    >
-      <input
-          type="hidden"
-          name="_to"
-          value="{{ site.data.contact_email_address }}"
-      />
-      <!--
+    <div id="contact-form-wrapper">
+      <div class="form-fill">
+        <form
+          action="{{ site.data.endpoints.contact_endpoint }}"
+          method="{{ site.data.endpoints.contact_endpoint_method }}"
+          id="contact-form"
+      >
+        <input
+            type="hidden"
+            name="_to"
+            value="{{ site.data.contact_email_address }}"
+        />
+        <div class="halves">
+          <div>
+            <label
+                for="first-name"
+                class="required"
+            >
+              First Name
+            </label>
+            <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                placeholder="First name"
+                required
+            />
+          </div>
+          <div>
+            <label
+                for="last-name"
+                class="required"
+            >
+              Last Name
+            </label>
+            <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                placeholder="Last name"
+                required
+            />
+          </div>
+        </div>
+
+        <label
+            for="company"
+        >
+          Company
+        </label>
         <input
             type="text"
-            name="_gotcha"
-            style="display: none;"
+            name="company"
+            id="company"
+            placeholder="Company"
         />
-      -->
 
-      <div class="halves">
-        <div>
-          <label for="first-name">First Name</label>
-          <input
-              type="text"
-              name="first-name"
-              id="first-name"
-              placeholder="First name"
-          />
-        </div>
+        <label
+            for="email"
+            class="required"
+        >
+          Email Address
+        </label>
+        <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@example.com"
+            required
+        />
 
-        <div>
-          <label for="last-name">Last Name</label>
-          <input
-              type="text"
-              name="last-name"
-              id="last-name"
-              placeholder="Last name"
-          />
+        <label
+            for="message"
+            class="required"
+        >
+          Message
+        </label>
+        <textarea
+            name="message"
+            id="message"
+            placeholder="Hi there..."
+            required
+        ></textarea>
+
+        <div
+            class="g-recaptcha"
+            data-sitekey="{{ site.google_recaptcha_v2_site_key }}"
+        ></div>
+        <div class="contact-message" id="contact-form-error">
+
         </div>
+        <input type="submit" value="Send Message"/>
+      </form>
       </div>
-
-      <label for="email">Email Address</label>
-      <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="email@example.com"
-          required
-      />
-
-      <label for="message">Message</label>
-      <textarea
-          name="message"
-          id="message"
-          placeholder="Hi There..."
-      ></textarea>
-
-      <div
-          class="g-recaptcha"
-          data-sitekey="{{ site.google_recaptcha_v2_site_key }}"
-      ></div>
-      <input type="submit" value="Send Message"/>
-    </form>
-  </div>
-
-  <div class="container halves aligned-top mt-40">
-    <div>
-      <h3>Address</h3>
-      <!--
-{#      <address>
-        <a
-            target="_blank"
-            href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}"
-        >
-          {{ page.map.address | replace: ", ", ", <br>" }}
-        </a>
-      </address>#}
-      -->
-    </div>
-    <div>
-      <h3>Email</h3>
-      <p>
-        <a
-            href="mailto:{{ site.data.personal_information.contact_email_address }}"
-        >
-          {{ site.data.personal_information.contact_email_address }}
-        </a>
-      </p>
+      <div class="contact-form-success">
+        Thanks for your submission! I'll contact with you as fast as I can.
+      </div>
     </div>
   </div>
+
 </section>
 
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-<script src="/js/useful/httpHandler.js"></script>
-<script src="/js/pages/contactForm.js"></script>

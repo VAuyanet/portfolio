@@ -1,1 +1,2 @@
-contact_endpoint: contact_endpoint.html
+contact_endpoint: https://formspree.io/f/xnqlrvkg
+contact_endpoint_method: post

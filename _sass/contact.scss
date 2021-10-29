@@ -1,0 +1,36 @@
+@import "formUtilities";
+
+#contact-form-wrapper {
+
+  .contact-form-success {
+    display: none;
+  }
+  &.form-success {
+    form#contact-form {
+      display: none;
+    }
+    .contact-form-success {
+      display: block;
+    }
+  }
+
+
+  .contact-message {
+    border: 2px solid;
+    border-radius: 3px;
+    padding: 15px;
+    margin-top: 20px;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+
+    &.active {
+      opacity: 1;
+    }
+
+    &#contact-form-error {
+      border-color: rgb(196, 0, 26);
+      background-color: rgba(196, 0, 26, 0.2);
+      color: rgb(196, 0, 26);
+    }
+  }
+}
