@@ -1,13 +1,11 @@
-- title: Pages
+- title:
   links:
-    - name: Home
-      link: /
-    - name: Portfolio
-      link: /portfolio/
-    - name: About me
-      link: /about/
-    - name: Contact
-      link: /contact/
+#    - name: Portfolio
+#      link: /portfolio/
+#    - name: About me
+#      link: /about/
+#    - name: Contact
+#      link: /contact/
 - title: Social
   links:
     - name: Twitter

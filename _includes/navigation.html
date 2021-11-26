@@ -10,9 +10,14 @@
       {% if link.link == page.url %}
         {% assign class = class | append: " active" %}
       {% endif %}
-      <li><a href="{{ site.base_url }}{{ link.link }}" class="{{ class }}"
-             {% if
-               link.new_window %}target="_blank" {% endif %}>{{ link.name }}</a>
+      <li>
+        <a
+            href="{{ site.base_url }}{{ link.link }}"
+            class="{{ class }}"
+            {% if link.new_window %}target="_blank" {% endif %}
+        >
+          {{ link.name }}
+        </a>
       </li>
     {% endfor %}
   </ul>
