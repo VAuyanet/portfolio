@@ -21,15 +21,15 @@
 <header>
   <div class="container">
     <h1
-        class="company-name">
+      class="company-name">
       <a
-          href="{{ site.base_url }}/"
+        href="{{ site.base_url }}/"
       >
         <img
-            src="{{ site.base_url }}/images/logo.svg"
-            alt="Urban"
-            width="150"
-            height="32"
+          src="{{ site.base_url }}/images/logo.svg"
+          alt="Urban"
+          width="150"
+          height="32"
         >
       </a>
     </h1>
@@ -49,10 +49,10 @@
           {% for link in column.links %}
             <li>
               <a
-                  {% if link.new_window %}target="_blank"{% endif %}
-                  {% if link.new_window %}rel="noreferrer noopener"{% endif %}
-                  href="{% include relative-src.html src=link.link %}"
-                  {% if link.social_icon %}class="{{ link.social_icon | slugify }}-icon"{% endif %}
+                {% if link.new_window %}target="_blank"{% endif %}
+                {% if link.new_window %}rel="noreferrer noopener"{% endif %}
+                href="{% include relative-src.html src=link.link %}"
+                {% if link.social_icon %}class="{{ link.social_icon | slugify }}-icon"{% endif %}
               >
                 {% if link.social_icon %}
                   {% include social-icon.html icon=link.social_icon %}
@@ -71,13 +71,15 @@
         </li>
         <li>{{ site.data.personal_information.description }}</li>
         <li>
-          <a href="mailto:{{ site.data.personal_information.contact_email_address }}"
+          <a
+            href="mailto:{{ site.data.personal_information.contact_email_address }}"
           >
             {{ site.data.personal_information.contact_email_address }}
           </a>
         </li>
         <li>
-          <a href="tel:{{ site.data.personal_information.contact_phone_number }}"
+          <a
+            href="tel:{{ site.data.personal_information.contact_phone_number }}"
           >
             {{ site.data.personal_information.contact_phone_number }}
           </a>
@@ -92,7 +94,6 @@
 <script src="/js/libs/blazy.min.js"></script>
 <script src="/js/layout/menu.js"></script>
 <script src="/js/pages/default.js"></script>
-
 
 
 {% if site.google_tracking == true %}
