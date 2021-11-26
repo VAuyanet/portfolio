@@ -1,9 +1,5 @@
-document.onreadystatechange = function () {
-  if (document.readyState === "interactive") {
-    initBlazy();
-  }
-};
+initBlazy();
 
 function initBlazy() {
-  var bLazy = new Blazy();
+   new Blazy();
 }

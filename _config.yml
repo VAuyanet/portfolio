@@ -1,8 +1,9 @@
 title: Victor Auyanet
 url: "http://auyanet.com"
 base_url:
-google_analytics_key: G-DT3SKFBBZW
-google_recaptcha_v2_site_key: 6LdMv48cAAAAAMqA9tJppqZlp8VbwVTaeWCkyKg3
+google_tracking: false
+#google_analytics_key: G-DT3SKFBBZW
+#google_recaptcha_v2_site_key:
 
 # Default description in social shares for the jekyll-seo-tag gem
 description: Curriculum Vitae
