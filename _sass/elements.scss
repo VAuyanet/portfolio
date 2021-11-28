@@ -1,5 +1,6 @@
 html {
   background: $html-background-color;
+  font-size: 16px;
 }
 
 html,
@@ -7,9 +8,10 @@ body {
   margin: 0;
   padding: 0;
 }
-
+//TODO: Download and import font locally
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -28,7 +30,7 @@ img {
 h1 {
   font-weight: 300;
   font-size: 2.3rem;
-  margin: 0;
+  margin: 0 0 30px 0;
 }
 
 h2 {

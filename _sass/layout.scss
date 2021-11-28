@@ -85,7 +85,7 @@ section {
     }
 
     h2 {
-      font-size: 3.5rem;
+      font-size: 3rem;
     }
 
     p {
@@ -97,6 +97,13 @@ section {
       color: #ffffff;
       font-style: italic;
     }
+    .hero-cta {
+      display: flex;
+      justify-content: flex-end;
+      .button {
+        font-size: 1.6rem;
+      }
+    }
   }
 
   &.alternate {
@@ -105,8 +112,8 @@ section {
 }
 
 .button {
-  padding: 13px 38px;
-  border-radius: 3px;
+  padding: 14px 18px;
+  border-radius: 0;
   display: inline-block;
   color: $brand-color;
   cursor: pointer;
@@ -114,6 +121,7 @@ section {
   border: 1px solid #fff;
   background: #fff;
   text-decoration: none !important;
+  font-weight: 400;
 
   &:hover {
     background: rgba(255, 255, 255, 0.3);
