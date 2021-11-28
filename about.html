@@ -2,7 +2,8 @@
 title: About me
 heading: This is me
 ---
-
+{% assign currentYear = site.time | date: '%Y' %}
+{% assign yearsPrograming = currentYear | minus: 2018 %}
 <section class="diagonal">
   <div class="text-container about-layout">
     <div class="row">
@@ -22,8 +23,7 @@ heading: This is me
             Always ready for any project.
           </p>
           <p>
-            {{ site.data.personal_information.dev_experience_years }} years of
-            experience programming and counting.
+            {{ yearsPrograming }} years of experience programming and counting.
           </p>
         </div>
       </div>
