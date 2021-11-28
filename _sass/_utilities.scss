@@ -4,7 +4,7 @@ $marginsTop: 40;
     margin-top: $marginTop + px !important;
   }
 }
-$marginsBottom: 25;
+$marginsBottom: 25, 50;
 @each $marginBottom in $marginsBottom {
   .mb-#{$marginBottom} {
     margin-bottom: $marginBottom + px !important;

@@ -1,5 +1,6 @@
 .row {
   display: flex;
+  flex-wrap: wrap;
 
   [class^=col-] {
     padding: 0 15px;
@@ -8,6 +9,7 @@
   .col-50 {
     max-width: 100%;
     width: 50%;
+    flex: 1;
     @media (max-width: 768px) {
       width: 100%;
     }
