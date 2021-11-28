@@ -8,6 +8,9 @@
   {% seo %}
 
   <link rel="stylesheet" href="{{ site.base_url }}/css/screen.css">
+  {% if page.name == 'about.html' %}
+    <link rel="stylesheet" href="{{ site.base_url }}/css/about.css">
+  {% endif %}
 
   <link rel="apple-touch-icon" href="{{ site.base_url }}/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="{{ site.base_url }}/touch-icon.png"
