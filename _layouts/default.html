@@ -73,14 +73,14 @@
       <ul class="footer-links">
         <li>
           <h2>
-            {{ site.data.personal_information.title }}
+            Contact information
           </h2>
         </li>
-        <li>{{ site.data.personal_information.description }}</li>
         <li>
           <a
             href="mailto:{{ site.data.personal_information.contact_email_address }}"
           >
+            {% include contact-icon.html icon="Email" %}
             {{ site.data.personal_information.contact_email_address }}
           </a>
         </li>
@@ -88,13 +88,13 @@
           <a
             href="tel:{{ site.data.personal_information.contact_phone_number }}"
           >
+            {% include contact-icon.html icon="Phone" %}
             {{ site.data.personal_information.contact_phone_number }}
           </a>
         </li>
       </ul>
     </div>
   </div>
-
 </footer>
 
 
