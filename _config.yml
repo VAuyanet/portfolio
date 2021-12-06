@@ -1,4 +1,4 @@
-title: Victor Auyanet
+title: Victor Auyanet's personal website
 url: "http://auyanet.com"
 base_url:
 google_tracking: false
@@ -6,23 +6,23 @@ google_tracking: false
 #google_recaptcha_v2_site_key:
 
 # Default description in social shares for the jekyll-seo-tag gem
-description: Curriculum Vitae
+description: Web developer with experience in Next.js, React, Drupal, Version control, Clean code and much more
 
 # Author details for the jekyll-seo-tag gem
 author:
-  name:
-  email:
-  twitter: # twitter username without the @ symbol
+  name: Victor Auyanet Vilabella
+  email: victor@auyanet.com
+  twitter: auyanetvictor # twitter username without the @ symbol
 
 # Social details for the jekyll-seo-tag gem
 social:
-  name: Victor Auyanet
+  name: Victor Auyanet Vilabella
   links:
     - https://github.com/VAuyanet/curriculum-vitae
 
 
-timezone: Etc/UTC
-
+timezone: Etc/GMT-1
+locale: en_US
 
 plugins:
   - "jekyll-seo-tag"
@@ -34,15 +34,6 @@ exclude:
   - LICENCE
 
 defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      _options:
-        content:
-          width: 960
-          height: 2000
   - scope:
       path: ""
       type: "pages"
