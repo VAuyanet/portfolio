@@ -142,7 +142,7 @@ section {
     flex: 1 0 100%;
   }
 
-  @media #{$mid-point} {
+  @media (min-width: $min-tablet) {
     > div {
       flex: 1;
     }
@@ -178,11 +178,11 @@ section {
     border: 1px solid $brand-color;
     line-height: 0;
 
-    @media #{$tablet} {
+    @media (min-width: $min-mobile) {
       flex: 1 1 50%;
     }
 
-    @media #{$desktop} {
+    @media (min-width: $min-desktop) {
       flex: 1 1 30%;
     }
 

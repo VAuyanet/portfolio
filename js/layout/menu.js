@@ -7,9 +7,10 @@ document.onreadystatechange = function () {
 
 function initNavMenu() {
   const openNav = document.getElementById("open-nav");
-  openNav.onclick = function () {
-    document.body.classList.toggle("nav-open");
-    return false;
-  };
-
+  if(openNav != null) {
+    openNav.onclick = function () {
+      document.body.classList.toggle("nav-open");
+      return false;
+    };
+  }
 }

@@ -4,7 +4,7 @@
     background: #444;
     z-index: 10;
 
-    @media #{$mid-point} {
+    @media (min-width: $min-tablet) {
       background: none;
     }
   }
@@ -17,7 +17,7 @@
       display: block;
     }
 
-    @media #{$mid-point} {
+    @media (min-width: $min-tablet) {
       border: 0;
       padding: 0 20px;
 
@@ -42,7 +42,7 @@ nav {
     display: block;
   }
 
-  @media #{$mid-point} {
+  @media (min-width: $min-tablet) {
     text-align: right;
     position: absolute;
     top: 0;
@@ -62,7 +62,7 @@ nav {
     display: none;
     font-size: 1rem;
 
-    @media #{$mid-point} {
+    @media (min-width: $min-tablet) {
       border-bottom: 2px solid rgba(255, 255, 255, 0);
       display: block;
       padding: 10px;
@@ -78,7 +78,7 @@ nav {
     }
     &:hover {
       color: #fff;
-      @media #{$mid-point} {
+      @media (min-width: $min-tablet) {
         border-bottom: 2px solid rgba(255, 255, 255, 0.6);
         display: block;
         padding: 10px;
@@ -95,7 +95,7 @@ nav {
       font-size: 1.9em;
       border: 0;
 
-      @media #{$mid-point} {
+      @media (min-width: $min-tablet) {
         display: none;
       }
 
