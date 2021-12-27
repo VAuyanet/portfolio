@@ -44,6 +44,7 @@
 <footer class="diagonal">
   <div class="container">
     <div class="footer-columns">
+      <div class="footer-links"></div>
       {% for column in site.data.footer %}
         <ul class="footer-links">
           <li>
@@ -70,12 +71,10 @@
         </ul>
       {% endfor %}
 
-
-      <!--TODO: Move to footer.yml -->
       <ul class="footer-links">
         <li>
           <h2>
-            Contact information
+            {{ site.data.personal_information.title }}
           </h2>
         </li>
         <li>

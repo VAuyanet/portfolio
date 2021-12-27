@@ -1,11 +1,3 @@
-#- title:
-#  links:
-#    - name: Portfolio
-#      link: /portfolio/
-#    - name: About me
-#      link: /about/
-#    - name: Contact
-#      link: /contact/
 - title: Social
   links:
     - name: Twitter
