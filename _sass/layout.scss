@@ -97,39 +97,51 @@ section {
     .hero-cta {
       display: flex;
       justify-content: flex-end;
-      .button {
-        font-size: 1.6rem;
-      }
     }
   }
 
   &.alternate {
-    background: #eee;
+    background: #eeeeee;
   }
 }
 
 .button {
-  padding: 14px 18px;
-  border-radius: 0;
   display: inline-block;
-  color: $brand-color;
   cursor: pointer;
-  margin: 20px 0 0 0;
-  border: 1px solid #fff;
-  background: #fff;
-  text-decoration: none !important;
+  font-size: 1.6rem;
   font-weight: 400;
+  padding: 14px 18px;
+  margin: 20px 0 0 0;
+  border-radius: 0;
+  text-decoration: none !important;
+  color: $brand-color;
+  border: 1px solid #ffffff;
+  background: #ffffff;
 
   &:hover {
     background: rgba(255, 255, 255, 0.3);
-    color: #fff;
+    color: #ffffff;
   }
 
   &:active {
     opacity: 1;
     background: rgba(255, 255, 255, 0.1);
-    color: #fff;
+    color: #ffffff;
     transform: translateY(1px);
+  }
+  &.inverted {
+    color: #ffffff;
+    border: 1px solid $brand-color;
+    background: $brand-color;
+    &:hover {
+      background: rgba(0, 176, 240, 0.3);
+      color: $brand-color;
+    }
+
+    &:active {
+      background: rgba(0, 176, 240, 0.1);
+      color: $brand-color;
+    }
   }
 }
 

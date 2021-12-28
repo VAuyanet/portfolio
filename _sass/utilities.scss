@@ -1,3 +1,4 @@
+//SPACINGS
 $marginsTop: 40;
 @each $marginTop in $marginsTop {
   .mt-#{$marginTop} {
@@ -8,5 +9,13 @@ $marginsBottom: 25, 50;
 @each $marginBottom in $marginsBottom {
   .mb-#{$marginBottom} {
     margin-bottom: $marginBottom + px !important;
+  }
+}
+
+//ALIGNMENTS
+$textAlignments: center;
+@each $textAlignment in $textAlignments {
+  .text-#{$textAlignment} {
+    text-align: $textAlignment !important;
   }
 }

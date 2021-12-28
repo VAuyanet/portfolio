@@ -14,6 +14,9 @@ body {
 body {
   font-family: 'Roboto', sans-serif;
 }
+body * {
+  box-sizing: border-box;
+}
 
 a {
   color: $brand-color;

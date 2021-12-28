@@ -9,11 +9,12 @@
   }
 
   .col-50 {
-    max-width: 100%;
     width: 50%;
-    flex: 1;
-    @media (max-width: 768px) {
+    @media (max-width: $min-desktop) {
       width: 100%;
     }
+  }
+  .col-100 {
+    width: 100%;
   }
 }
