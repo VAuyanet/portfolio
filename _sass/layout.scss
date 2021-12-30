@@ -5,17 +5,14 @@
   position: relative;
   padding: 0 20px;
 }
-
+.container,
 .text-container {
   max-width: 1000px;
 }
 
-.container {
-  max-width: 1000px;
-}
 
 header {
-  color: #fff;
+  color: #ffffff;
   padding: 20px 0;
   position: absolute;
   top: 0;
@@ -23,7 +20,7 @@ header {
   width: 100%;
 
   a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     z-index: 1;
     position: relative;
@@ -39,7 +36,7 @@ header {
 }
 
 .content {
-  background: #fff;
+  background: #ffffff;
   padding: 1px 0 0 0;
   position: relative;
 }
@@ -50,13 +47,13 @@ header {
   margin: 0 auto;
   border-radius: 2px;
   padding: 20px 0 0;
-  background: url($screenshot-buttons) 4px 4px no-repeat #DDD;
+  background: url($screenshot-buttons) 4px 4px no-repeat #DDDDDD;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 section {
   padding: 150px 0;
-  background: #fff;
+  background: #ffffff;
   margin-top: -2px;
 
   &.diagonal {
@@ -87,7 +84,7 @@ section {
 
     p {
       font-size: 1.8rem;
-      color: #fff;
+      color: #ffffff;
     }
 
     a:not(.button) {
@@ -124,17 +121,17 @@ section {
   }
 
   &:active {
-    opacity: 1;
     background: rgba(255, 255, 255, 0.1);
     color: #ffffff;
     transform: translateY(1px);
   }
+
   &.inverted {
     color: #ffffff;
     border: 1px solid $brand-color;
     background: $brand-color;
     &:hover {
-      background: rgba(0, 176, 240, 0.3);
+      background: rgba(0, 176, 240, 0.15);
       color: $brand-color;
     }
 
@@ -237,7 +234,7 @@ section {
 
   .position {
     margin-top: 5px;
-    color: #fff;
+    color: #ffffff;
   }
 
   .filler {
