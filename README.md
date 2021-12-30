@@ -1,8 +1,7 @@
 # Portfolio
 
-**Hello my name is Victor!**
+**Hello I'm Victor, welcome to my website!**
 
-I love programming, organization and teamwork, that makes me as a web developer create high-performing 
-applications with clean and organized code always in mind.
+## About this Website
 
-
+Based on CloudCannon's [Urban](https://github.com/CloudCannon/urban-jekyll-bookshop-template) template, this Jekyll has been modified and adapted to meet the needs of this website.
