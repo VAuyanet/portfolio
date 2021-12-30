@@ -26,6 +26,7 @@ locale: en_US
 
 plugins:
   - "jekyll-seo-tag"
+  - "jekyll-sitemap"
 
 exclude:
   - Gemfile

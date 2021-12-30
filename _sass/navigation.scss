@@ -71,13 +71,13 @@ nav {
         border-radius: 5px;
 
         &:hover {
-          background: #fff;
+          background: #ffffff;
           color: $brand-color;
         }
       }
     }
     &:hover {
-      color: #fff;
+      color: #ffffff;
       @media (min-width: $min-tablet) {
         border-bottom: 2px solid rgba(255, 255, 255, 0.6);
         display: block;
@@ -85,7 +85,7 @@ nav {
       }
     }
     &.active {
-      color: #fff;
+      color: #ffffff;
     }
     &.nav-toggle {
       display: inline;
