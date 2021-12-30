@@ -1,4 +1,4 @@
-title: Victor Auyanet's personal website
+title: Victor Auyanet's website
 url: "https://auyanet.com"
 base_url:
 google_tracking: false
@@ -18,7 +18,7 @@ author:
 social:
   name: Victor Auyanet Vilabella
   links:
-    - https://github.com/VAuyanet/curriculum-vitae
+    - https://github.com/VAuyanet/portfolio
 
 
 timezone: Etc/GMT-1
