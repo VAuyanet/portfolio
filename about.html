@@ -5,6 +5,9 @@ subtitle: Know more about who am I and what I like.
 ---
 {% assign currentYear = site.time | date: '%Y' %}
 {% assign yearsPrograming = currentYear | minus: 2018 %}
+
+{% assign uniqueTime = site.time | date: '%s' %}
+
 <section class="diagonal">
   <div class="text-container about-layout">
     <div class="row">
@@ -47,7 +50,7 @@ subtitle: Know more about who am I and what I like.
       <div class="col-100 text-center">
         <a
           class="button inverted"
-          href="/files/CV-2021-ENG.pdf"
+          href="/files/CV-2021-ENG.pdf?timestamp={{uniqueTime}}"
           target="_blank"
         >
           Download my CV
