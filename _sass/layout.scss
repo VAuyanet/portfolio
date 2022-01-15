@@ -78,11 +78,13 @@ section {
     padding-top: 300px;
 
     h2,
-    p {
+    p,
+    .as-p {
       max-width: 90%;
     }
 
-    p {
+    p,
+    .as-p {
       font-size: 1.8rem;
       color: #ffffff;
     }
@@ -258,7 +260,8 @@ section {
   background: #222 url($pattern);
 
   &,
-  p {
+  p,
+  .as-p {
     color: #fefefe;
   }
 }
